@@ -1,0 +1,574 @@
+<script src="js/test.js"></script>
+<div class="collapsible-header donTitulo">¡DESCUBRE TU(S) DON(ES) AQUÍ!</div>
+<div class="collapsible-body">
+    <div class="row">
+        <h4>Descubriendo mi(s) don(es)</h4>
+        <h5>Selecciona una opción en cada afirmación:</h5>
+        <h6>Lo siguiente es verdad acerca de mi...</h6>
+    </div>
+    <div class="row" id="contenedorPreguntas">
+        <!-- <div class="row">
+            <div class="col s12 donTitulo">
+                1. Soy capaz de organizar ideas, tareas, gente y tiempo para el servicio cristiano.
+            </div>
+            <div class="col s12">
+                <form name="frmPreg01">
+                    <label><input class="with-gap" name="preg01" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg01" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg01" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg01" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg01" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg01"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+        <div class="row">
+            <div class="col s12 donTitulo">
+                2. He usado una habilidad creativa específica (escribir, pintar, actuar, etc.) para beneficio del cuerpo de Cristo.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg02">
+                    <label><input class="with-gap" name="preg02" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg02" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg02" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg02" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg02" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg02"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+        <div class="row">
+            <div class="col s12 donTitulo">
+                3. Soy capaz de distinguir entre la verdad y el error espiritual.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg03">
+                    <label><input class="with-gap" name="preg03" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg03" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg03" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg03" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg03" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg03"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+        <div class="row">
+            <div class="col s12 donTitulo">
+                4. He animado a otros a vivir como Cristo.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg04">
+                    <label><input class="with-gap" name="preg04" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg04" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg04" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg04" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg04" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg04"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+        <div class="row">
+            <div class="col s12 donTitulo">
+                5. Me gusta hablar de Jesús a las personas que no lo conocen.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg05">
+                    <label><input class="with-gap" name="preg05" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg05" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg05" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg05" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg05" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg05"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+        <div class="row">
+            <div class="col s12 donTitulo">
+                6. He tenido la experiencia de saber con seguridad la voluntad de Dios en situaciones específicas, aun cuando la evidencia no era muy clara.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg06">
+                    <label><input class="with-gap" name="preg06" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg06" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg06" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg06" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg06" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg06"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+        <div class="row">
+            <div class="col s12 donTitulo">
+                7. He asumido la responsabilidad de satisfacer necesidades financieras en la iglesia y la comunidad.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg07">
+                    <label><input class="with-gap" name="preg07" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg07" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg07" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg07" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg07" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg07"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                8. Disfruto proveyendo de alojamiento para invitados y no me molestan las visitas inesperadas.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg08">
+                    <label><input class="with-gap" name="preg08" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg08" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg08" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg08" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg08" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg08"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                9. Tomo los motivos de oración de otras personas seriamente y continúo orando por ellos.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg09">
+                    <label><input class="with-gap" name="preg09" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg09" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg09" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg09" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg09" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg09"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                10. Motivo a los grupos a cumplir objetivos bíblicos específicos.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg10">
+                    <label><input class="with-gap" name="preg10" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg10" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg10" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg10" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg10" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg10"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                11. Tengo la habilidad de cambiar sentimientos de compasión en gozosas acciones de bondad.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg11">
+                    <label><input class="with-gap" name="preg11" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg11" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg11" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg11" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg11" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg11"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                12. He abogado por la causa de Dios delante de la iglesia del mundo.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg12">
+                    <label><input class="with-gap" name="preg12" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg12" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg12" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg12" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg12" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg12"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                13. Disfruto haciendo cosas que ayudan a otros a ministrar más efectivamente.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg13">
+                    <label><input class="with-gap" name="preg13" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg13" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg13" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg13" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg13" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg13"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                14. Me he responsabilizado de la vida espiritual de otros creyentes con muy buenos resultados.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg14">
+                    <label><input class="with-gap" name="preg14" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg14" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg14" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg14" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg14" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg14"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                15. El contenido de mi clase es claro para los estudiantes.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg15">
+                    <label><input class="with-gap" name="preg15" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg15" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg15" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg15" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg15" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg15"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                16. Me gusta planear actividades en las que la gente se involucre.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg16">
+                    <label><input class="with-gap" name="preg16" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg16" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg16" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg16" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg16" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg16"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                17. Me gusta expresarme en forma creativa para Dios a través del arte (música, drama, poesía, etc.).
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg17">
+                    <label><input class="with-gap" name="preg17" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg17" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg17" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg17" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg17" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg17"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                18. Veo un serio peligro cuando falsas doctrinas y enseñanzas se infiltran en la iglesia.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg18">
+                    <label><input class="with-gap" name="preg18" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg18" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg18" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg18" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg18" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg18"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                19. Soy sensible al sufrimiento, problemas y desánimo de la gente y trato de ayudarlas buscando las respuestas que Dios ofrece a sus problemas.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg19">
+                    <label><input class="with-gap" name="preg19" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg19" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg19" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg19" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg19" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg19"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                20. Me gustaría compartir el evangelio libre y efectivamente con personas no creyentes.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg20">
+                    <label><input class="with-gap" name="preg20" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg20" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg20" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg20" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg20" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg20"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                21. Acepto tal cual las promesas de Dios y las aplico a situaciones específicas sin ninguna duda.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg21">
+                    <label><input class="with-gap" name="preg21" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg21" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg21" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg21" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg21" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg21"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                22. Me siento motivado a dar cuando veo situaciones de necesidad financiera en el reino de Dios.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg22">
+                    <label><input class="with-gap" name="preg22" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg22" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg22" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg22" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg22" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg22"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                23. Soy amable y sensitivo con las visitas y los extraños, lo que los hace sentirse bien.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg23">
+                    <label><input class="with-gap" name="preg23" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg23" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg23" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg23" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg23" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg23"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                24. Soy sensitivo a las necesidades de oración de otras personas y trato de apoyarlas en oración.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg24">
+                    <label><input class="with-gap" name="preg24" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg24" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg24" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg24" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg24" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg24"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                25. Tengo el deseo de ayudar, dirigir y guiar a otras personas en un ministerio importante de la iglesia.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg25">
+                    <label><input class="with-gap" name="preg25" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg25" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg25" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg25" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg25" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg25"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                26. Me gustaría ministrar a los inválidos o a los que tienen retraso mentales.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg26">
+                    <label><input class="with-gap" name="preg26" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg26" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg26" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg26" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg26" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg26"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                27. La escritura me provee de entendimiento en cuanto a la gente y a situaciones sobre las que gustaría hablar.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg27">
+                    <label><input class="with-gap" name="preg27" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg27" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg27" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg27" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg27" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg27"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                28. Sé cuando otras personas necesitan ayuda y siempre tengo la disposición de ayudarles.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg28">
+                    <label><input class="with-gap" name="preg28" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg28" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg28" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg28" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg28" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg28"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                29. Quiero satisfacer las necesidades espirituales de los creyentes, por lo que me gusta participar en ministerios de edificación y discipulado.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg29">
+                    <label><input class="with-gap" name="preg29" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg29" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg29" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg29" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg29" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg29"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 donTitulo">
+                30. Me gusta ayudar a las personas a entender cosas.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg30">
+                    <label><input class="with-gap" name="preg30" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg30" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg30" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg30" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg30" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg30"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                31. Soy capaz de elaborar planes efectivos para cumplir objetivos.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg31">
+                    <label><input class="with-gap" name="preg31" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg31" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg31" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg31" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg31" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg31"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                32. Tengo habilidades artísticas (música, drama, escribir, pintura, escultura, etc.) las cuales he puesto a disposición del reino de Dios.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg32">
+                    <label><input class="with-gap" name="preg32" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg32" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg32" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg32" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg32" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg32"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                33. Me doy cuenta de las personas o doctrinas falsas y manipuladoras cuando otros no se dan cuenta.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg33">
+                    <label><input class="with-gap" name="preg33" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg33" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg33" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg33" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg33" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg33"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                34. Personas de mi iglesia han sido animadas a amar y a actuar correctamente después de recibir mi consejo.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg34">
+                    <label><input class="with-gap" name="preg34" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg34" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg34" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg34" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg34" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg34"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 donTitulo">
+                35. He llevado a otras personas a conocer a Jesús como su Salvador.
+            </div>
+            <div class="col s12">
+                <form name = "frmPreg35">
+                    <label><input class="with-gap" name="preg35" type="radio" value=1 /><span>Muy poco</span></label>
+                    <label><input class="with-gap" name="preg35" type="radio" value=2 /><span>Poco</span></label>                        
+                    <label><input class="with-gap" name="preg35" type="radio" value=3 /><span>Algo</span></label>
+                    <label><input class="with-gap" name="preg35" type="radio" value=4 /><span>Bastante</span></label>
+                    <label><input class="with-gap" name="preg35" type="radio" value=5 /><span>Mucho</span></label>
+                </form>
+            </div>
+            <div class="col s12 hide" id="errPreg35"><span class="red-text">Conteste esta pregunta</span></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <a class="waves-effect waves-light btn" id="btnAnaliza">Analizar respuestas</a>
+            </div>
+            <div class="col s12 hide" id="msgError">
+                <span class="red-text" id="txtError">FALTAN RESPUESTAS POR CONTESTAR. VERIFIQUE LAS ALERTAS DE COLOR ROJO.</span>
+            </div>
+        </div> -->
+    </div>
+
+</div>
